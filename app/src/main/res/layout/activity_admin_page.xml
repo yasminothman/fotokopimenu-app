@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/middlepage"
+    tools:context=".adminPage">
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="Welcome, "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonLogout" />
+
+    <Button
+        android:id="@+id/buttonCustView"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="74dp"
+        android:text="customer view"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="26dp"
+        android:onClick="loginPage"
+        android:text="logout"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="207dp"
+        android:text="save"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonCustView" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="408dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edtPrice"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="397dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="19dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnChoose"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="@+id/btnChoose"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoose"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="choose image"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddMenu"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddMenu" />
+
+    <Button
+        android:id="@+id/buttonRegisterUser"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="85dp"
+        android:onClick="RegisterUser"
+        android:text="Register new admin"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddMenu"
+        app:layout_constraintVertical_bias="0.153" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

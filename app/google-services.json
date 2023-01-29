@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671236999278",
+    "project_id": "fotokopimenuapp2",
+    "storage_bucket": "fotokopimenuapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671236999278:android:29e4c339791a8d9f2d3e7f",
+        "android_client_info": {
+          "package_name": "com.example.fotokopimenuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671236999278-n0rdfk74jc8m89j6k9nm4jmd61dhaddo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVte0YQihv4pJjW-3uHQ9LK8jbzuEnp8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671236999278-n0rdfk74jc8m89j6k9nm4jmd61dhaddo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
